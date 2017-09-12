@@ -1,4 +1,5 @@
 /secrets.yaml
+/known_devices.yaml
 /*.db
 /.HA_VERSION
 /*.log
