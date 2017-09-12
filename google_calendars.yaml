@@ -1,0 +1,5 @@
+- cal_id: fr.canadian#holiday@group.v.calendar.google.com
+  entities:
+  - device_id: holidays_in_canada
+    name: Jours fériés au Canada
+    track: true

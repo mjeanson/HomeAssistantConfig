@@ -1,0 +1,5 @@
+name: Network Bandwidth
+view: no
+icon: mdi:speedometer
+entities:
+  - sensor.fastcom_download
