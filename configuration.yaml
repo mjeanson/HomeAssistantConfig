@@ -3,13 +3,14 @@ homeassistant:
   latitude: !secret ha_latitude
   longitude: !secret ha_longitude
   elevation: !secret ha_elevation
+  temperature_unit: C
   unit_system: metric
   time_zone: America/Montreal
   customize: !include_dir_merge_named customizations
 
-ffmpeg:
-
 http:
+
+config:
 
 group: !include_dir_named groups
 
@@ -27,7 +28,7 @@ media_player: !include_dir_list media_players
 
 notify: !include_dir_list notifiers
 
-input_boolean: !include_dir_named input_booleans
+#input_boolean: !include_dir_named input_booleans
 
 binary_sensor: !include_dir_list binary_sensors
 
@@ -40,9 +41,10 @@ cover: !include_dir_list covers
 zone: !include_dir_list zones
 
 logbook:
-
+  exclude:
+    domains:
+      - sun
 sun:
-  elevation: !secret ha_elevation
 
 history:
 

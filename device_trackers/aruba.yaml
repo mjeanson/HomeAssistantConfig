@@ -1,4 +1,0 @@
-platform: aruba
-host: !secret aruba_host
-username: !secret aruba_username
-password: !secret aruba_password

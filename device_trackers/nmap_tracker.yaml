@@ -1,0 +1,6 @@
+platform: nmap_tracker
+hosts: 172.31.98.1/23
+home_interval: 30
+exclude:
+  - 172.31.98.1
+  - 172.31.98.10
